@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD localStorage JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="container">
+        <form action="" id="create">
+            <input type="text" id="firstName" placeholder="Nom *">
+            <input type="text" id="lastName" placeholder="Prénom *">
+            <input type="number" id="age" placeholder="Age *">
+            <button type="submit">
+                <ion-icon name="checkmark-done-outline"></ion-icon> Soumettre
+            </button>
+        </form>
+
+        <form action="" id="update">
+            <input type="text" id="ufirstName" placeholder="Nom *">
+            <input type="text" id="ulastName" placeholder="Prénom *">
+            <input type="number" id="uage" placeholder="Age *">
+            <input type="number" id="uid" hidden>
+            <button type="submit">
+                 <ion-icon name="create-outline"></ion-icon>  Editer
+            </button>
+        </form>
+
+       <div id="btn-add">
+            <button name="" id="addForm">
+                <ion-icon name="add-circle-outline"></ion-icon> Ajouter 
+            </button>
+       </div>
+
+        <table>
+            <thead>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </thead>
+            <tbody id="tbody">
+               
+            </tbody>
+        </table>
+    </section>
+    
+    <script type="module" src="main.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

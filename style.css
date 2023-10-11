@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #070A52;
+}
+#container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px #000000;
+}
+form {
+    margin-bottom: 60px;
+}
+form input, form button{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #070A52;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+form input:focus{
+    outline: none;
+}
+form button, #btn-add button{
+   padding: 7px 30px;
+   text-transform: capitalize;
+   font-size: 20px;
+   color: #070A52;
+   border: 2px solid #070A52;
+   border-radius: 10px;
+   background-color: transparent;
+   transition: .7s ease;
+   cursor: pointer;
+   
+}
+#update button {
+    color: #FFCD4B;
+    border: 2px solid #FFCD4B;
+}
+#update button:hover {
+    background-color: #FFCD4B;
+    color: aliceblue;
+}
+form button:hover{
+    background-color: #070A52;
+    color: aliceblue;
+}
+form button ion-icon{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+#create, #update {
+    display: none;
+}
+
+#btn-add button {
+    border: 2px solid #1A5D1A;
+    color: #1A5D1A;
+    margin-bottom: 30px;
+}
+#btn-add button:hover {
+    background-color: #1A5D1A;
+    color: aliceblue;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #070A52;
+}
+table thead {
+    border: 2px solid #070A52;
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+}
+table thead th {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 18px 0;
+}
+table td{
+    width: 100px;
+    text-align: center;
+}
+table tbody tr td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+table tbody tr td a {
+    text-decoration: none; 
+    padding: 5px;
+    font-size: 18px;
+}
+table tbody tr td a:nth-child(1) {
+    border-radius: 6px;
+    border: 2px solid #FFCD4B;
+    color: #FFCD4B;
+    margin-right: 10px;
+    transition: .7s ease;  
+}
+table tbody tr td a:nth-child(1):hover {
+    color: white;
+    background-color: #FFCD4B;
+}
+table tbody tr td a:nth-child(2) {
+    border-radius: 6px;
+    border: 2px solid #C70039;
+    color: #C70039;
+    margin-right: 10px; 
+    transition: .7s ease; 
+}
+table tbody tr td a:nth-child(2):hover {
+    color: white;
+    background-color: #C70039;
+}
